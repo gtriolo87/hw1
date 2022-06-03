@@ -1,0 +1,76 @@
+﻿#content {
+    margin: 0px 10px;
+}
+
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.15rem;
+    text-align:center;
+}
+#divEditJob {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin:10px auto;
+}
+#divEditJob div{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height:55px;
+    margin-bottom:10px;
+}
+#divEditJob label{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+#divEditJob input{
+    border:1px solid darkgray;
+    height: 30px;
+    width:250px;
+}
+#divEditJob input.error{
+    border-color: red;
+}
+#divEditJob span{
+    color:red;
+    font-weight: bold;
+    font-size: 8pt;
+}
+input#divEditJob {
+    width:100%;
+}
+
+@media (max-width:530px) {
+
+    #divEditJob {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin:10px auto;
+    }
+    
+    #divEditJob label{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
